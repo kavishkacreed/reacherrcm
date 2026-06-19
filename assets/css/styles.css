@@ -1291,7 +1291,7 @@ h6,
 }
 
 .text-gradient-1 {
-  background: linear-gradient(132.09deg, #ffffff 11.15%, #d4d4d8 79.01%);
+  background: linear-gradient(132.09deg, #43484D 11.15%, #292C2E 79.01%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0px transparent;
   -webkit-text-fill-color: transparent;
@@ -5152,7 +5152,7 @@ button.animate-btn::after,
   position: absolute;
   inset: 16px 16px 0 16px;
   border-radius: 40px;
-  background-image: linear-gradient(135deg, rgba(9, 23, 27, 0.7) 0%, rgba(18, 38, 60, 0.8) 100%), url(./../images/section/hero-1.png);
+  background-image: url(./../images/section/hero-1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5243,7 +5243,6 @@ button.animate-btn::after,
 
 .section-hero .content-wrap .text {
   margin-bottom: 24px;
-  color: #e4e4e7;
 }
 
 .section-hero .content-wrap .bot-btns {
