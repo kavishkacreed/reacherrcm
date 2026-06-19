@@ -1,0 +1,54 @@
+--body: linear-gradient(135deg, #09171beb 0%, #12263c 100%);
+
+
+
+background: linear-gradient(360deg, var(--bs-white) 0%, #0b74a8 100%);
+
+
+
+
+.box-white {
+    background-color: #1a5863;
+    border-radius: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+
+.text-gradient-3 {
+    background: linear-gradient(95.5deg, #24ba1a 1.91%, #ffffff 43.92%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0px transparent;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 7px;
+    margin-bottom: -7px;
+}
+
+
+.benefits-progress-inner .benefits-progress-item .progress-text {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: #2e465b;
+    box-shadow: 0px 7.77px 16px 0px rgba(0, 0, 0, 0.0588235294), 0px 3px 3px 0px rgba(0, 0, 0, 0.1019607843), 0px -4px 0px 0px rgba(0, 0, 0, 0.0509803922) inset, 0px 4px 0px 0px rgba(255, 255, 255, 0.6) inset;
+}
+
+.benefits-step-inner .step-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #f3f3f4;
+    box-shadow: 0px 7.77px 16px 0px rgba(0, 0, 0, 0.0588235294), 0px 3px 3px 0px rgba(0, 0, 0, 0.1019607843), 0px -4px 0px 0px rgba(0, 0, 0, 0.0509803922) inset, 0px 4px 0px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
