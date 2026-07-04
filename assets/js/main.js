@@ -309,6 +309,28 @@
         });
     };
 
+    // Theme Toggle
+    var themeToggle = function () {
+        const button = document.querySelector(".theme-toggle");
+        if (!button) return;
+
+        // Load saved theme or default to dark (true)
+        const savedTheme = localStorage.getItem("theme");
+        const isDark = savedTheme !== "light";
+
+        document.documentElement.setAttribute("data-dark-mode", isDark ? "true" : "false");
+        button.setAttribute("aria-pressed", isDark ? "true" : "false");
+
+        button.addEventListener("click", function () {
+            const isPressed = button.getAttribute("aria-pressed") === "true";
+            const newDarkState = !isPressed;
+            
+            document.documentElement.setAttribute("data-dark-mode", newDarkState ? "true" : "false");
+            button.setAttribute("aria-pressed", newDarkState ? "true" : "false");
+            localStorage.setItem("theme", newDarkState ? "dark" : "light");
+        });
+    };
+
     // Dom Ready
     $(function () {
         infiniteSlide();
@@ -322,5 +344,6 @@
         counter();
         dot();
         viewbox();
+        themeToggle();
     });
 })(jQuery);
