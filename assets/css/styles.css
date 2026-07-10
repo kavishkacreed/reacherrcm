@@ -5250,6 +5250,7 @@ button.animate-btn::after,
 
 .section-hero .content-wrap .text {
   margin-bottom: 24px;
+  color: #09090B;
 }
 
 .section-hero .content-wrap .bot-btns {
@@ -5273,6 +5274,12 @@ button.animate-btn::after,
   height: 56px;
   background-color: #EDECEC;
   border-radius: 40px 40px 0 0;
+  color: #09090B !important;
+}
+
+.section-hero .scroll-more a,
+.section-hero .scroll-more .link1 {
+  color: #09090B !important;
 }
 
 .section-hero .scroll-more .icon {
