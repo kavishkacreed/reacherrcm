@@ -53,14 +53,14 @@
   --body: linear-gradient(135deg, #1c292d 0%, #12263c 100%);
   --primary: #ffffff;
   --white: #12263c;
-  --black: #ffffff;
-  --secondary: #A1A1AA;
+  --black: #000000;
+  --secondary: #000000;
 }
 
 [data-color-primary=color-primary-1] {
   --brand: #FD3A25;
 }
-
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
 [data-color-primary=color-primary-2] {
   --brand: #f8c736;
 }
@@ -1313,7 +1313,8 @@ h6,
 }
 
 .text-gradient-3 {
-  background: linear-gradient(95.5deg, #24ba1a 1.91%, #ffffff 43.92%);
+  background: linear-gradient(
+16deg, #000000 -1.09%, #5fdb38 67.92%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0px transparent;
   -webkit-text-fill-color: transparent;
@@ -9551,7 +9552,7 @@ button.animate-btn::after,
 
 #goTop .icon {
   font-size: 22px;
-  color: var(--white);
+  color:#F4F4F5;
   aspect-ratio: 1;
 }
 
@@ -9900,7 +9901,7 @@ button.animate-btn::after,
   width: 60px;
   height: 60px;
   font-size: 32px;
-  color: var(--white);
+  color: #ffffff;
   margin-bottom: 32px;
   border-radius: 16px;
   background-color: #272727;
@@ -11021,7 +11022,7 @@ button.animate-btn::after,
         * Blog
         * Layout
         * Header
-        * Accordion
+        * Accordionfooter .footer-con
         * Animation
         * Box Icon
         * Button
@@ -11137,7 +11138,7 @@ footer .footer-content .title,
 footer .footer-content .text,
 footer .footer-bottom .footer-links a,
 footer .footer-bottom .action-go-top {
-  color: #ffffff;
+  color: #000000;
 }
 
 footer .footer-bottom .coppy-rights {
@@ -11153,7 +11154,7 @@ footer .footer-bottom .coppy-rights {
   -webkit-tap-highlight-color: transparent;
   width: 65px;
   min-width: 65px;
-  height: calc(65px * 3 / 8); /* aspect-ratio: 8 / 3 */
+  height: calc(70px * 3 / 8); /* aspect-ratio: 8 / 3 */
   border-radius: 100vh;
   border: 0;
   position: relative;
@@ -11370,7 +11371,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 }
 
 [data-dark-mode="true"] .tf-header .header-inner {
-  background: rgba(18, 38, 60, 0.7);
+  background: rgba(18, 38, 60, 0.5);
 }
 
 .tf-header .header-inner {
@@ -11383,6 +11384,46 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 
 [data-dark-mode="true"] .footer-logo img {
   content: url("../images/logo/logo-1.svg");
+}
+
+/* FAQ section styles: keep text black in all states and modes */
+.accordion-asked .accordion-button {
+  color: #000000 !important;
+}
+
+.accordion-asked .accordion-button:not(.collapsed) {
+  color: #000000 !important;
+}
+
+.accordion-asked .accordion-body {
+  color: #000000 !important;
+}
+
+/* Contact form and info styles: keep text black/dark gray in all modes */
+.section-contact .contact-item .content .title {
+  color: #000000 !important;
+}
+
+.section-contact .contact-item .content .text {
+  color: #71717A !important;
+}
+
+.section-contact .contact-item .icon {
+  color: #000000 !important;
+}
+
+.form-contact,
+.form-contact .heading,
+.form-contact label,
+.form-contact input,
+.form-contact textarea {
+  color: #000000 !important;
+}
+
+.form-contact input::placeholder,
+.form-contact textarea::placeholder {
+  color: #A1A1AA !important;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
