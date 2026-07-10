@@ -1255,11 +1255,11 @@ h6,
 
 /* Orther */
 .text-white {
-  color: var(--white) !important;
+  color: #ffffff !important;
 }
 
 .text-black {
-  color: var(--black) !important;
+  color: #000000 !important;
 }
 
 .text-primary {
