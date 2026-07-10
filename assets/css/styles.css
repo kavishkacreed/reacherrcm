@@ -5505,6 +5505,12 @@ button.animate-btn::after,
   margin-top: -13px;
 }
 
+.section-about-us .box-quotes .desc,
+.section-about-us .box-quotes .cite .name,
+.section-about-us .box-quotes .cite .sub {
+  color: #09090B !important;
+}
+
 .section-about-us .mission-box {
   background-color: var(--neutral-100);
   border-radius: 40px;
