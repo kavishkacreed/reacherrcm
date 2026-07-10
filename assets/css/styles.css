@@ -5993,6 +5993,27 @@ button.animate-btn::after,
   letter-spacing: -0.03px;
 }
 
+.process-card .content .title {
+  color: #09090B !important;
+}
+
+.process-card .content .text {
+  color: #71717A !important;
+}
+
+.process-card .bot .time {
+  color: #71717A !important;
+  border-color: #E4E4E7 !important;
+}
+
+.process-card .bot .number .text-neutral-400 {
+  color: #A1A1AA !important;
+}
+
+.process-card .bot .number .text-neutral-200 {
+  color: #E4E4E7 !important;
+}
+
 @media (max-width: 767px) {
   .process-card {
     padding: 20px;
@@ -11354,15 +11375,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 
 .tf-header .header-inner {
   transition: background 0.5s ease;
-}
-
-/* Logo Swap via CSS content property */
-.tf-header .logo-site img {
-  content: url("../images/logo/logo.svg");
-}
-
-[data-dark-mode="true"] .tf-header .logo-site img {
-  content: url("../images/logo/logo-1.svg");
 }
 
 .footer-logo img {
