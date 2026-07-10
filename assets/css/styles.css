@@ -11426,4 +11426,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   opacity: 1;
 }
 
+/* Footer text and button styles in dark mode */
+[data-dark-mode="true"] footer .footer-content .title,
+[data-dark-mode="true"] footer .footer-content .text,
+[data-dark-mode="true"] footer .footer-bottom .footer-links a,
+[data-dark-mode="true"] footer .footer-bottom .action-go-top {
+  color: #ffffff !important;
+}
+
+[data-dark-mode="true"] .tf-social-1 a {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  box-shadow: 0px -3px 0px 0px rgba(255, 255, 255, 0.05) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+[data-dark-mode="true"] .tf-social-1 a .social-item {
+  background: #18181B !important;
+  box-shadow: none;
+}
+
+[data-dark-mode="true"] .tf-social-1 a:hover {
+  color: var(--brand) !important;
+}
+
+[data-dark-mode="true"] .tf-social-1 a:hover .icon {
+  color: var(--brand) !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
