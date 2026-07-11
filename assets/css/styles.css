@@ -1313,13 +1313,12 @@ h6,
 }
 
 .text-gradient-3 {
-  background: linear-gradient(
-16deg, #000000 -1.09%, #5fdb38 67.92%);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0px transparent;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 7px;
-  margin-bottom: -7px;
+    background: linear-gradient(360deg, var(--bs-white) 0%, #0b74a8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0px transparent;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 7px;
+    margin-bottom: -7px;
 }
 
 @keyframes bghover {
@@ -11443,6 +11442,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 
 [data-dark-mode="true"] .tf-social-1 a:hover .icon {
   color: var(--brand) !important;
+}
+
+/* Custom text gradient for contact section heading */
+.section-contact .heading-title {
+  background: linear-gradient(135deg, #2E8B57 0%, #0b74a8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-stroke: 0px transparent !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
