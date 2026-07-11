@@ -1299,7 +1299,8 @@ h6,
 }
 
 .text-gradient-1 {
-  background: linear-gradient(132.09deg, #43484D 11.15%, #292C2E 79.01%);
+  background: linear-gradient(
+183deg, var(--bs-white) 0%, #0b74a8 68%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0px transparent;
   -webkit-text-fill-color: transparent;
@@ -11446,7 +11447,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 
 /* Custom text gradient for contact section heading */
 .section-contact .heading-title {
-  background: linear-gradient(135deg, #2E8B57 0%, #0b74a8 100%) !important;
+  background: linear-gradient(
+347deg, var(--bs-white) 0%, #0b74a8 60%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-stroke: 0px transparent !important;
   -webkit-text-fill-color: transparent !important;
