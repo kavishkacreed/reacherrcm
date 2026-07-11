@@ -9935,7 +9935,6 @@ button.animate-btn::after,
   width: 208px;
   height: 160px;
   border-radius: 32px;
-  background: linear-gradient(180deg, #192736 0%, #192736 100%), radial-gradient(62.56% 62.56% at 28.14% -10.42%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .features-center img {
@@ -11467,6 +11466,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 [data-dark-mode="true"] .adaptive-heading {
     -webkit-text-fill-color: #ffffff !important;
     color: #ffffff !important;
+}
+
+/* Keep light mode offcanvas menu appearance for dark mode too */
+[data-dark-mode="true"] .offcanvas-menu {
+  --body: #FAFAFA !important;
+  --primary: #09090B !important;
+  --white: #ffffff !important;
+  --black: #000000 !important;
+  --secondary: #71717A !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
