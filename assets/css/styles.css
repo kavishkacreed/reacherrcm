@@ -11378,14 +11378,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   transition: background 0.5s ease;
 }
 
-.footer-logo img {
-  content: url("../images/logo/logo-2.svg");
-}
-
-[data-dark-mode="true"] .footer-logo img {
-  content: url("../images/logo/logo-1.svg");
-}
-
 /* FAQ section styles: keep text black in all states and modes */
 .accordion-asked .accordion-button {
   color: #000000 !important;
