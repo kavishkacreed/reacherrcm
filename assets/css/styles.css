@@ -5931,6 +5931,12 @@ button.animate-btn::after,
   border-radius: 40px;
   background-color: var(--neutral-100);
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.0509803922) inset, 0px 4px 0px 0px rgba(255, 255, 255, 0.6) inset, 0px 7.77px 16px 0px rgba(0, 0, 0, 0.0588235294), 0px 3px 3px 0px rgba(0, 0, 0, 0.1019607843);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.process-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 0px 0px rgba(255, 255, 255, 0.8) inset, 0px 20px 40px 0px rgba(46, 139, 87, 0.15), 0px 15px 25px 0px rgba(11, 116, 168, 0.1);
 }
 
 .process-card .icon {
@@ -5945,7 +5951,14 @@ button.animate-btn::after,
   background: linear-gradient(180deg, #3b89e7 0%, #2fb2ef 100%);
   box-shadow: 0px 3.44px 5.57px 0px rgb(0 0 0 / 10%), 0px 22.91px 37.08px 0px rgb(86 121 93 / 16%), 0px 76px 123px 0px rgba(255, 59, 0, 0.0509803922), 0px 5.05px 8.18px 0px rgba(255, 59, 0, 0.1019607843), 0px 16.98px 27.47px 0px rgba(255, 59, 0, 0.0470588235), 0px 56px 83px 0px rgb(86 117 140 / 0%), 0px 14px 34px 0px rgb(80 141 230 / 20%), 0px 1px 2px 0px rgb(79 168 235), 0px -3px 0px 0px rgb(79 160 234) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.6) inset;
   margin-bottom: 48px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.process-card:hover .icon {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0px 15px 25px 0px rgba(59, 137, 231, 0.5), 0px -3px 0px 0px rgb(79 160 234) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.8) inset;
+}
+
 
 .process-card .content {
   flex-grow: 1;
@@ -5966,6 +5979,11 @@ button.animate-btn::after,
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, rgba(212, 212, 216, 0) 0%, #D4D4D8 50%, rgba(212, 212, 216, 0) 100%);
+  transition: all 0.4s ease;
+}
+
+.process-card:hover .content .title::after {
+  background: linear-gradient(90deg, rgba(46, 139, 87, 0) 0%, #2E8B57 50%, rgba(46, 139, 87, 0) 100%);
 }
 
 .process-card .bot {
