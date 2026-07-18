@@ -11604,6 +11604,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   font-size: 1.55rem;
   line-height: 1.25;
   font-weight: 700;
+  margin-top: 16px;
   margin-bottom: 12px;
   position: relative;
   padding-bottom: 16px;
@@ -11722,8 +11723,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   color: #A1A1AA;
 }
 
-/* Mobile touch — click to flip */
+/* Desktop: show 'hover', hide 'click' */
+.hint-mobile {
+  display: none;
+}
+.hint-desktop {
+  display: inline;
+}
+
+/* Mobile touch — show 'click', hide 'hover' */
 @media (hover: none) {
+  .hint-desktop {
+    display: none;
+  }
+  .hint-mobile {
+    display: inline;
+  }
   .flip-hint::before {
     content: "☝";
     animation: none;
