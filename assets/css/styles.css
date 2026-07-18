@@ -11552,7 +11552,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
               0px 4px 0px 0px rgba(255, 255, 255, 0.6) inset,
               0px 7.77px 16px 0px rgba(0, 0, 0, 0.06),
               0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -11630,12 +11630,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
 .flip-hint {
   font-size: 0.75rem;
   color: #A1A1AA;
+  margin-top: auto;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 6px;
-  flex-shrink: 0;
 }
 
 .flip-hint::before {
