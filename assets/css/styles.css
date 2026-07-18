@@ -11517,17 +11517,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   min-height: 360px;
   transition: transform 0.75s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   border-radius: 40px;
 }
 
 /* Trigger on hover (desktop) */
 .process-card.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* Trigger on touch / clicked (mobile) */
 .process-card.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* Shared front & back face styles */
@@ -11543,6 +11546,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   display: flex;
   flex-direction: column;
   padding: 32px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* FRONT — keeps existing card look */
@@ -11554,6 +11559,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
               0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   justify-content: flex-start;
   overflow: hidden;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg) translateZ(1px);
+  transform: rotateY(0deg) translateZ(1px);
 }
 
 /* Large decorative circle glow in the empty space area */
@@ -11658,9 +11666,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a, li {
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.15) inset,
               0px 20px 40px 0px rgba(46, 139, 87, 0.18),
               0px 8px 16px 0px rgba(11, 116, 168, 0.12);
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(0);
+  -webkit-transform: rotateY(180deg) translateZ(0);
   justify-content: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* Subtle shimmer overlay on the back */
